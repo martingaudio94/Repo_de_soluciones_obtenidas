@@ -1,0 +1,18 @@
+# Pruebas de docker
+
+* Docker-compose.yml -> configuraciones internas del container
+* Dockerfile -> configuraciones externas del container
+
+<< Ubuntu >>
+docker
+  //  ps -a -> lista contenedores
+  //  images -> lista imagenes
+  //  stop -> detiene containers
+  //  start -> enciendo containers
+  //  rm -> elimina contenedores
+  //  rmi -> elimina imagenes
+  //  //  $(docker ps -a -q) -> ejecuta comandos al listado de containers
+  //  //  $(docker images -q) -> ejecuta comandos al listado de imagenes
+  //  run --name [NOMBRE] -d -p puerto:mapeo_puerto -ti [imagen_nombre_O_id] -> crea container con puertos expuestos
+  //  commit [ID_container] [Nuevo_nombre] -> creamos nueva imagen.
+  // attach [NOMBRE_O_ID] -> entrar al container.
