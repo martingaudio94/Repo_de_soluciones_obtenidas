@@ -1,0 +1,25 @@
+# algunos comandos de postgresql que podria ayudar
+
+vamos a acceder con el usuario de administracion postgres
+
+sudo su postgres
+
+pass del usuario actual (o root)
+
+* \l -> lista bases de datos
+* \dt -> lista las tablas de la base de datos actual
+* \c <nombre_data_base> -> cambia a la base de datos <nombre_data_base>
+* \d <nombre_tabla> -> nos da los datos de las variables (columnas) de la tabla <nombre_tabla>
+* select version(); -> seleciona la version de postgres a utilizar si existen mas de 1 instaladas en el sistema
+* \g -> ver comando ejecutado anteriormente
+* \? -> ver todos los comandos para ejecutar en psql
+* \h <comando a ejecutar> -> te muestra ayuda sobre el comando a utilizar ej: \h DROP TABLE.
+* \e -> nos va a abrir un notepad donde escribiremos 1 o mas sentencias al guardarlo y salir se ejecutaran todas.
+* \du -> listar usuarios.
+
+------------- Usuarios y bases -------------
+CREATE USER <nombre_usuario> WITH PASSWORD '<password-del-nombre_usuario>';->crea usuario con password.
+GRANT ALL PRIVILEGES ON DATABASE <nombre_data_base> to <nombre_usuario>; -> garantiza todos los privilegios a un usuario en este caso a una base de datos.
+revoke all privileges on database <nombre_data_base> from <nombre_usuario>; ->revoca los privilegios anteriormente garantizados a un usuario sobre una BD.
+
+estos comandos como create, grant, revoke, etc. tienen autocompletado con ayuda del <boton TAB> por si queremos aplicarlos sobre otros <factores/entidades>.
