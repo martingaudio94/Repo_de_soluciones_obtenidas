@@ -23,3 +23,9 @@ GRANT ALL PRIVILEGES ON DATABASE <nombre_data_base> to <nombre_usuario>; -> gara
 revoke all privileges on database <nombre_data_base> from <nombre_usuario>; ->revoca los privilegios anteriormente garantizados a un usuario sobre una BD.
 
 estos comandos como create, grant, revoke, etc. tienen autocompletado con ayuda del <boton TAB> por si queremos aplicarlos sobre otros <factores/entidades>.
+
+
+---------------------- Conexion a base de datos a travez de IP o nombre_de_dominio
+psql -h <<host_DB>> -U <<Nombre_de_usuario>> -d <<Nombre_DB>>
+
+Luego requerira password para el <<Nombre_de_usuario>>
