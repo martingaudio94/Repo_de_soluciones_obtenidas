@@ -15,6 +15,9 @@ luego otra vez-->
 
 ---------------Segunda opcion mas facil (me funciono de maravilla)   ----------------------------->>>
 
-sudo add-apt-repository ppa:deadsnakes/ppa
-sudo apt update
-sudo apt install python3.6
+$ sudo add-apt-repository ppa:deadsnakes/ppa
+$ sudo apt update
+$ sudo apt install python3.6
+
+
+ * eliminar repo agregado con add-apt-repository   --> sudo add-apt-repository --remove ppa:nombre/ppa
