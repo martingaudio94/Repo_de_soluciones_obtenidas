@@ -1,0 +1,20 @@
+# vamos a instalar python "from source" 
+* tar xvzf PACKAGENAME.tar.gz si viene zipeado
+* dentro de la carpeta PACKAGENAME ->
+* ./configure
+* make
+* make test
+* sudo make install
+------------problemas con ssl y pip? --------------->
+apt install libssl-dev libncurses5-dev libsqlite3-dev libreadline-dev libgdm-dev libdb4o-cil-dev libpcap-dev
+
+luego otra vez-->
+* ./configure
+* make
+* sudo make install
+
+---------------Segunda opcion mas facil (me funciono de maravilla)   ----------------------------->>>
+
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt update
+sudo apt install python3.6
