@@ -16,3 +16,4 @@ docker
   //  run --name [NOMBRE] -d -p puerto:mapeo_puerto -ti [imagen_nombre_O_id] -> crea container con puertos expuestos
   //  commit [ID_container] [Nuevo_nombre] -> creamos nueva imagen.
   // attach [NOMBRE_O_ID] -> entrar al container.
+  // exec [container_name] <comando_a_correr> -> exec ejecuta un comando en el background de docker 
