@@ -17,6 +17,7 @@ docker
   //  commit [ID_container] [Nuevo_nombre] -> creamos nueva imagen.
   // attach [NOMBRE_O_ID] -> entrar al container.
   // exec [container_name] <comando_a_correr> -> exec ejecuta un comando en el background de docker 
+  // exec -ti [container_name] </bib/bash> entra al contenedor con consola 
  ##
  
 el docker-compose podemos agregar restart:always para que inicie automaticamente con los servidores
