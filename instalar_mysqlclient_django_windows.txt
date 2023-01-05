@@ -1,0 +1,19 @@
+# Conexion a mysql con Django sobre windows
+
+* Instalar mysql sobre windows (en lo posible utilizando chocolatey)
+* Descargar el .tar (source code) del conector de python/mysql
+ // utilizar el comando python setup.py install para instalar el conector en el entorno python
+
+* utilizar el comando:
+ // pip install --only-binary :all: mysqlclient -> para instalar los binarios de mysqlclient en el entorno
+
+
+# settings.py -> django proyect
+'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'mydb',
+            'USER': 'root',
+            'PASSWORD': '',
+            'HOST': 'localhost',
+            'PORT': '3306',
+        }
